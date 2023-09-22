@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.dumptruckman.minecraft</groupId>
+    <groupId>com.ghostchu.thirdparty</groupId>
     <artifactId>JsonConfiguration</artifactId>
     <version>1.2-SNAPSHOT</version>
     <name>JsonConfiguration</name>
@@ -209,14 +209,15 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>OnARandomBox</id>
-            <url>http://repo.onarandombox.com/content/repositories/thirdparty/</url>
-        </repository>
-        <snapshotRepository>
-            <id>OnARandomBox</id>
-            <url>http://repo.onarandombox.com/content/repositories/thirdparty-dev/</url>
-        </snapshotRepository>
-    </distributionManagement>
+<distributionManagement>
+    <repository>
+        <id>codemc-releases</id>
+        <url>https://repo.codemc.io/repository/maven-releases/</url>
+    </repository>
+    <!-- Only needed when publishing snapshots -->
+    <snapshotRepository>
+        <id>codemc-snapshots</id>
+        <url>https://repo.codemc.io/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
